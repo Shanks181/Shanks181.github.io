@@ -6,17 +6,26 @@ nob.addEventListener("mousemove", function() {
     console.log(alto, ancho)
     nob.style.gridRow = alto;
     nob.style.gridColumn = ancho;
-    const audioElement = document.getElementById("PERDON");
-    const audio = audioElement.querySelector("PERDON");
-    audio.play();
     })
 
 
 function random(min,max) {
-    let numero = Math.floor(Math.random() * (max - min + 1) + min)
+    let numero = Math.floor(Math.random() * (max - min + 0.1) + min)
     return numero
 }
 
+let play = document.getElementById("desp")
+
+play.addEventListener("click", function(){
+    const audioElement = document.getElementById("PERDON");
+     const audio = audioElement.querySelector("audio");
+     audio.play();
+     document.getElementById("desp").style.display = "none";
+     document.getElementById("1").removeAttribute("hidden");
+     document.getElementById("img").removeAttribute("hidden");
+     document.getElementById("Si").removeAttribute("hidden");
+     document.getElementById("No").removeAttribute("hidden");
+})
 
 let sib = document.getElementById("Si")
 
@@ -36,16 +45,12 @@ sib.addEventListener("click", function() {
     document.getElementById("1").style.color = "transparent";
     document.getElementById("Si").style.display = "none";
     document.getElementById("No").style.display = "none";
-   
+    document.getElementById("img").style.display = "none";
+    document.getElementById("cont").removeAttribute("hidden")
+    document.getElementById("feli").removeAttribute("hidden")
+    document.body.classList.remove("container");
+
 })
 
-window.onload = function() {
-    // Tu código existente
-    // Código para reproducir la canción automáticamente
-    const audioElement = document.getElementById("PERDON");
-    if (audioElement) { // Comprueba si el elemento existe antes de acceder a él
-      const audio = audioElement.querySelector("audio");
-      audio.play();
-    }
-  };
+
 
