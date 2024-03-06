@@ -1,0 +1,98 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+*{
+    background-color: pink;
+}
+
+h1 {
+    padding: 10px;
+    color: #711DB0;
+    top: 1500px;
+}
+
+
+
+button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: xx-large;
+    
+}
+
+#Si {
+    grid-row:  5;
+    grid-column: 5;
+    background-color: #04AA6D;
+    color: white;
+    margin-top: 500px;
+
+}
+
+#No {
+    grid-row: 5;
+    grid-column: 6;
+    background-color: #f44336;
+    margin-top: 500px;
+    color: white;
+    
+}
+
+#Si:hover{
+    background-color: aqua;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    width: 1200px;
+    height: 600px;
+    align-items: center;
+    justify-items: center;
+    top: 100px;
+}
+
+body {
+    max-width: 1200px;
+    max-height: 673px;
+    margin: 0 auto;
+    
+}
+
+p {
+    font-family: "Madimi One", sans-serif;
+    font-size: xx-large;
+    justify-content: center;
+    color: #f44336;
+    z-index: 10;
+}
+
+#image{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 1;
+    
+}
+
+img{
+    position: absolute;
+    top: 100px;
+    width: 50%;
+    height: 50%;
+}
+
+#audio{
+    margin-top: 100px;
+    
+}
+
